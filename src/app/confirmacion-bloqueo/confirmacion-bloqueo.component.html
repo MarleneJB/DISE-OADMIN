@@ -1,0 +1,13 @@
+  <h2 mat-dialog-title>Confirmar Bloqueo de Usuario</h2>
+<mat-dialog-content>
+  <form>
+    <mat-form-field>
+      <mat-label>Id de Usuario</mat-label>
+      <input matInput [(ngModel)]="usuario_id" name="usuario_id" id="usuario_id" required>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button (click)="onConfirm()" cdkFocusInitial>Confirmar</button>
+</mat-dialog-actions>

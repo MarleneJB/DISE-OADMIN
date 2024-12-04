@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+</head>
+<body>
+    <app-nav></app-nav>
+
+    <div class="screen-container">
+        <section class="seccion-mapa">
+          <h2 id="titulo">Mapa</h2>
+            <div class="container-items">
+                <div class="top-items">
+                    <div class="map">
+                        <app-map></app-map>
+                    </div>
+                    <aside class="column-cards">
+                        <div class="medium-card">
+                            <h4>Total de usuarios</h4>
+                            <p>{{ totalUsuarios }}</p>
+                        </div>
+                        <div class="medium-card">
+                            <h4>Estado con más usuarios</h4>
+                            <p>{{ estadoConMasUsuarios }}</p>
+                        </div>
+                        <div class="medium-card">
+                            <h4>Total de usuarios activos</h4>
+                            <p>{{ usuariosActivos }}</p>
+                          </div>
+                        </aside>
+                    </div>
+                    <div class="bottom-items">
+                        <div class="row-cards">
+                            <div class="small-card">
+                                <h4>Total de reportes</h4>
+                                <p>{{ totalReportes }}</p>
+                            </div>
+                            <div class="small-card">
+                                <h4>Estado con más reportes</h4>
+                                <p>{{ estadoConMasReportes }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+    </html>

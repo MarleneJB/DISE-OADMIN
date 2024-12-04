@@ -1,0 +1,13 @@
+/* confirm-dialog.component.css */
+mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-dialog-actions {
+    display: flex;
+  }

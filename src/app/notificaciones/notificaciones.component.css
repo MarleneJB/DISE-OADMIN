@@ -1,0 +1,55 @@
+body {
+  overflow-x: hidden;
+  padding-right: 2rem;
+}
+
+#titulo {
+  color: #7D53B5;
+  font-size: 36px;
+}
+
+.seccion-principal {
+  position: relative;
+  left: 150px;
+  padding-top: 3rem;
+}
+
+.contenedor {
+  height: 32rem;
+  width: 85%;
+  padding-left: 3rem;
+  border-radius: 2rem;
+  background-color: #dfdfdf;
+  overflow-y: scroll;
+}
+
+.caja {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: white;
+  padding: 1rem;
+  height: auto;
+  width: 90%;
+  margin: 1rem;
+}
+
+/* .lista-superior{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+li{
+  list-style: none;
+}
+
+.bloqueo{
+  border-radius: 5px;
+  height: 2rem;
+  width: 7rem;
+  background-color: #cfb9ec;
+  border: none;
+}

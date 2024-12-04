@@ -1,0 +1,40 @@
+<body>
+  <app-nav></app-nav>
+  
+  <section class="seccion-principal">
+    <h2 class="titulo" id="titulo">Usuarios</h2>
+    <br>
+    <div class="contenedor1">
+      <div class="contenedor2">
+        <table>
+          <thead class=" encabezado">
+            <tr>
+              <th>ID</th>
+              <th>Estado</th>
+              <th>Edad</th>
+              <th>Genero</th>
+              <th>Usuario</th>
+              <th>Email</th>
+              <!-- <th>Registro</th> -->
+            </tr>
+          </thead>
+
+          <tbody>
+            <ng-container *ngFor="let user of users; let i = index">
+              <tr >
+                <td>{{user.id}}</td>
+                <td>{{user.estado}}</td>
+                <td>{{user.edad}}</td>
+                <td>{{user.sexo}}</td>
+                <td>{{user.usuario}}</td>
+                <td>{{user.correo}}</td>
+                <!-- <td>{{user.fechaRegistro}}</td> -->
+              </tr>
+            </ng-container>
+          </tbody>
+
+        </table>
+      </div> 
+    </div>
+  </section>
+</body>

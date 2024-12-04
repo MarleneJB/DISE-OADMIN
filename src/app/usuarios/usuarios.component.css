@@ -1,0 +1,54 @@
+body{
+    overflow-x: hidden;
+    padding-right: 2rem;
+}
+
+.titulo{
+    color: #7D53B5;
+    font-size: 36px;
+}
+
+.seccion-principal {
+    position: relative;
+    left: 150px;
+    padding-top: 3rem;
+}
+
+.contenedor1{
+    height: 29rem;
+    width: 85%;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #dfdfdf;
+}
+
+.contenedor2{
+    height: 28rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative; 
+    overflow-y: scroll;
+}
+
+table{
+    background-color: white;
+    border-radius: 1rem;
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+    border-radius: 1rem;
+}
+
+td {
+    padding: 1rem;
+    padding-left: 5rem;
+}
+
+th{
+    position: sticky;
+    top: 0;
+    border-radius: 1rem;
+    background-color: #ffffff;
+}

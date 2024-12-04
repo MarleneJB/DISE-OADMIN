@@ -1,0 +1,35 @@
+<body>
+    <app-nav></app-nav>
+
+    <section class="seccion-principal">
+        <h2 id="titulo">Notificaciones</h2>
+        <br>
+        <div class="contenedor">
+            <ng-container *ngFor="let reporte of reportes; let i = index" >
+                <div class="caja">
+                        <div class="lista-superior">
+                            <ul>
+                                <li>Número de reporte: </li>
+                                <li>Motivo del reporte: </li>
+                                <li>Comentario: </li>
+                                <li>Fecha de reporte: </li>
+                                <li>Id de usuario reportado: </li>
+                            </ul>
+                        </div>
+                        <div class="lista-inferior">
+                            <ul>
+                                <li>{{reporte.id}}</li>
+                                <li>{{reporte.motivo}}</li>
+                                <li>{{reporte.comentario}}</li>
+                                <li>{{reporte.fechaRegistro}}</li>
+                                <li>{{reporte.usuario_reportado}}</li>
+                            </ul>
+                        </div>
+
+                    <button (click)="bloquearUsuario()" class="bloqueo">Bloquear usuario</button> 
+                </div>
+            </ng-container>
+
+        </div>
+    </section>
+</body>
